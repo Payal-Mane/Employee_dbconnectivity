@@ -1,6 +1,6 @@
 import mysql.connector
 
-class Employee:
+class EmployeeDetails:
     def __init__(self):
         self.conn = mysql.connector.connect(
             host="localhost",
@@ -38,11 +38,11 @@ class Employee:
         self.conn.commit()
         print("Data deleted successfully!!")
     
-    def close_connection(self):
+    def close_connectivity(self):
         self.conn.close()
         print("Connection is closed!!")
     
-e1 = Employee()
+e1 = EmployeeDetails()
 
 print("Options \n1.Fetch data.\n2.Insert data.\n3.Delete data.\n4.Exit.")
 option = int(input("Enter option 1/2/3/4 :"))
