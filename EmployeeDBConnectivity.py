@@ -38,7 +38,7 @@ class Employee:
         self.conn.commit()
         print("Data deleted successfully!!")
     
-    def close_connectivity(self):
+    def close_connection(self):
         self.conn.close()
         print("Connection is closed!!")
     
